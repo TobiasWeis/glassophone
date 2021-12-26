@@ -9,26 +9,26 @@ difference(){
     union(){
         difference(){
             //cube([20,12.5, 3]);
-            translate([-7,0,0])
-            cube([120, 12.5, 3]);
+            translate([-6,0,0])
+            cube([119, 12.5, 3]);
             
             hull(){
-                translate([5,2.5,-1])
+                translate([6.5,2.5,-1])
                 cylinder(r=1.25, h=10);
-                translate([5,3.5,-1])
+                translate([6.5,3.5,-1])
                 cylinder(r=1.25, h=10);
             }
             
             hull(){
-                translate([20-5,12.5-2.5,-1])
+                translate([20-3.5,12.5-2.5,-1])
                 cylinder(r=1.25, h=10);
-                translate([20-5,12.5-3.5,-1])
+                translate([20-3.5,12.5-3.5,-1])
                 cylinder(r=1.25, h=10);
             }
         }
 
         // anschlag
-        translate([-7,0,3])
+        translate([-6,0,3])
         difference(){
             cube([1, 12.5, 12.5]);
             
@@ -42,10 +42,10 @@ difference(){
         
         
         // seiten anschlag
-        translate([-7,-1,0])
+        translate([-6,-1,0])
         cube([10,1,15.5]);
         
-        translate([-7,12.5,0])
+        translate([-6,12.5,0])
         cube([10,1,15.5]);
         
         // servo-kupplung
